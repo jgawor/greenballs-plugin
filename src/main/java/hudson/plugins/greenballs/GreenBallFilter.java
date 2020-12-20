@@ -62,7 +62,7 @@ public class GreenBallFilter implements Filter {
   private String mapImage(String uri) {
     // Fix for JENKINS-28422
     if (InitMilestone.EXTENSIONS_AUGMENTED.compareTo(Hudson.getInstance().getInitLevel()) > 0) return null;
-    if (uri.contains("plugin/greenballs/")) return null;
+    if (uri.contains("plugin/danaballs/")) return null;
     Matcher m;
     User user = Hudson.getInstance().getUser(Hudson.getAuthentication().getName());
     if (user!=null) {
@@ -80,7 +80,7 @@ public class GreenBallFilter implements Filter {
     }
 
     if ((m = patternBlue.matcher(uri)).find()) {
-      return "/plugin/greenballs/" + m.group(1) + "/green" + m.group(2) + "." + m.group(3);
+      return "/plugin/danaballs/" + m.group(1) + "/green" + m.group(2) + "." + m.group(3);
     }
     return null;
   }

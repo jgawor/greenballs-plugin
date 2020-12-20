@@ -29,10 +29,10 @@ THE SOFTWARE.
     <artifactId>plugin</artifactId>
     <version>1.440</version>
   </parent>
-  <artifactId>greenballs</artifactId>
+  <artifactId>danaballs</artifactId>
   <packaging>hpi</packaging>
   <version>1.15-SNAPSHOT</version>
-  <name>Green Balls</name>
+  <name>Dana Balls</name>
   <description>Because green balls are better than blue</description>
   <url>http://wiki.jenkins-ci.org/display/JENKINS/Green+Balls</url>
   <inceptionYear>2009</inceptionYear>
